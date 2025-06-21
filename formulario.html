@@ -2,108 +2,103 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Historia del Rock</title>
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="icon" href="favicon.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Rock+Salt&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-
-
-
-
+  <meta charset="UTF-8" />
+  <title>Historia del Rock</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 
 <body>
-    <header>
-        <h1><i class="fa-solid fa-envelope"></i>Historia del Rock</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Introducción</a></li>
-                <li><a href="origenes.html">Orígenes</a></li>
-                <li><a href="decadas60.html">Años 60</a></li>
-                <li><a href="decadas70.html">Años 70</a></li>
-                <li><a href="subgeneros.html">Subgéneros</a></li>
-                <li><a href="bandasiconicas.html">Bandas Icónicas</a></li>
-                <li><a href="formulario.html">Suscripción</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <h1><i class="fa-solid fa-envelope" aria-hidden="true"></i> Historia del Rock</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Introducción</a></li>
+        <li><a href="origenes.html">Orígenes</a></li>
+        <li><a href="decadas60.html">Años 60</a></li>
+        <li><a href="decadas70.html">Años 70</a></li>
+        <li><a href="subgeneros.html">Subgéneros</a></li>
+        <li><a href="bandasiconicas.html">Bandas Icónicas</a></li>
+        <li><a href="formulario.html">Suscripción</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-        <h2>¡Únete a Nuestra Comunidad Rockera!</h2>
+  <main>
+    <h2>¡Únete a Nuestra Comunidad Rockera!</h2>
 
-        <p>
-            Suscríbete a nuestro newsletter para recibir noticias, recomendaciones y contenido exclusivo
-            sobre el mundo del rock. ¡Queremos saber de ti!
-        </p>
+    <p>
+      Suscríbete a nuestro newsletter para recibir noticias, recomendaciones y contenido exclusivo
+      sobre el mundo del rock. ¡Queremos saber de ti!
+    </p>
 
-        <form action="#" method="post" novalidate>
-            <fieldset>
-                <legend>Datos personales</legend>
+    <form action="#" method="post" novalidate>
+      <fieldset>
+        <legend>Datos personales</legend>
 
-                <label for="nombre">Nombre completo:</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required minlength="2"
-                    maxlength="50" />
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required minlength="2"
+          maxlength="50" />
 
-                <label for="email">Correo electrónico:</label>
-                <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required />
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required />
+      </fieldset>
 
-            </fieldset>
+      <fieldset>
+        <legend>Preferencias</legend>
 
-            <fieldset>
-                <legend>Preferencias</legend>
+        <label for="genero">Género musical favorito:</label>
+        <select id="genero" name="genero" required>
+          <option value="">Selecciona un género</option>
+          <option value="punk">Punk</option>
+          <option value="metal">Heavy Metal</option>
+          <option value="grunge">Grunge</option>
+          <option value="alternativo">Rock Alternativo</option>
+          <option value="progresivo">Rock Progresivo</option>
+        </select>
 
-                <label for="genero">Género musical favorito:</label>
-                <select id="genero" name="genero" required>
-                    <option value="">Selecciona un género</option>
-                    <option value="punk">Punk</option>
-                    <option value="metal">Heavy Metal</option>
-                    <option value="grunge">Grunge</option>
-                    <option value="alternativo">Rock Alternativo</option>
-                    <option value="progresivo">Rock Progresivo</option>
-                </select>
+        <p>¿Has asistido a algún concierto en vivo?</p>
+        <div class="radio-group">
+          <input type="radio" id="conciertos-si" name="conciertos" value="sí" required />
+          <label for="conciertos-si">Sí</label>
 
-                <label for="conciertos">¿Has asistido a algún concierto en vivo?</label>
-                <div class="radio-group">
-                    <input type="radio" id="conciertos-si" name="conciertos" value="sí" required />
-                    <label for="conciertos-si">Sí</label>
-
-                    <input type="radio" id="conciertos-no" name="conciertos" value="no" />
-                    <label for="conciertos-no">No</label>
-                </div>
-            </fieldset>
-
-            <fieldset>
-                <legend>Comentarios</legend>
-
-                <label for="comentarios">Cuéntanos qué te gustaría recibir:</label>
-                <textarea id="comentarios" name="comentarios" rows="5" placeholder="Escribe aquí..."
-                    required></textarea>
-            </fieldset>
-
-            <fieldset class="checkbox-group">
-                <input type="checkbox" id="acepto" name="acepto" required />
-                <label for="acepto">Acepto recibir correos con novedades y promociones.</label>
-            </fieldset>
-
-            <button type="submit">Enviar suscripción</button>
-        </form>
-    </main>
-
-    <footer>
-        <div class="footer-container">
-            <img src="img/foto.png" alt="Foto de Brenda Knoska" width="250" />
-            <div class="footer-info">
-                <p><strong>Nombre:</strong> Brenda Knoska</p>
-                <p><strong>Linkedin:</strong> 23-09-1999</p>
-                <p><strong>Email:</strong> brenda.lucia.knoska@gmail.com</p>
-                <p><strong>Fuentes:</strong> Wikipedia, Rolling Stone, BBC Music</p>
-            </div>
+          <input type="radio" id="conciertos-no" name="conciertos" value="no" />
+          <label for="conciertos-no">No</label>
         </div>
-    </footer>
+      </fieldset>
+
+      <fieldset>
+        <legend>Comentarios</legend>
+
+        <label for="comentarios">Cuéntanos qué te gustaría recibir:</label>
+        <textarea id="comentarios" name="comentarios" rows="5" placeholder="Escribe aquí..." required></textarea>
+      </fieldset>
+
+      <div class="checkbox-group">
+        <input type="checkbox" id="acepto" name="acepto" required />
+        <label for="acepto">Acepto recibir correos con novedades y promociones.</label>
+      </div>
+
+      <button type="submit">Enviar suscripción</button>
+    </form>
+  </main>
+
+ <footer>
+    <div class="footer-container">
+      <img src="img/foto.png" alt="Foto de Brenda Knoska" width="250" />
+      <div class="footer-info">
+        <p><strong>Nombre:</strong> Brenda Knoska</p>
+        <p><strong>Edad: 23-09-1999</strong></p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/brenda-knoska-56029b237/" target="_blank"
+            rel="noopener noreferrer">Linkedin</a></p>
+        <p><strong>Email:</strong> <a href="mailto:brenda.lucia.knoska@gmail.com">brenda.lucia.knoska@gmail.com</a></p>
+        <p><strong>Fuentes:</strong> Wikipedia, Rolling Stone, BBC Music</p>
+      </div>
+    </div>
+  </footer>
 
 </body>
 
