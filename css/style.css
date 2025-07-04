@@ -331,3 +331,75 @@ main ol li::before {
   font-size: 1.2rem;
   top: 2px;
 }
+
+
+/* DISEÑO RESPONSIVO */
+
+/* CELULARES: hasta 768px */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+    padding: 0 10px;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 5px 0;
+  }
+
+  main {
+    margin: 20px 10px;
+    padding: 15px;
+  }
+
+  main h2 {
+    font-size: 2rem;
+  }
+
+  main h3 {
+    font-size: 1.5rem;
+  }
+
+  main p {
+    font-size: 1rem;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .footer-info {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  footer {
+    padding: 15px 20px;
+  }
+
+  form {
+    padding: 20px;
+  }
+}
+
+/* TABLET: hasta 992px */
+@media (max-width: 992px) {
+  nav ul li {
+    margin: 0 10px;
+  }
+
+  main {
+    max-width: 95%;
+  }
+
+  .footer-container {
+    max-width: 95%;
+  }
+}
